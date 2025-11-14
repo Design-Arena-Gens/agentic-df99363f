@@ -1,0 +1,87 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: #0c1021;
+  color: #f2f4f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+  background: radial-gradient(circle at top, #18264d, #090c18 60%);
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+}
+
+.card {
+  background: rgba(14, 20, 37, 0.8);
+  border: 1px solid rgba(60, 97, 255, 0.25);
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(8, 12, 30, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 24px;
+  line-height: 1.6;
+  color: #c6cde5;
+}
+
+canvas {
+  width: 100%;
+  max-width: 920px;
+  border-radius: 16px;
+  border: 2px solid rgba(73, 110, 255, 0.45);
+  background: linear-gradient(#6ab7ff, #9cdbff 20%, #6a70ff 20.5%, #2d3059 60%, #1a1c33);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e8ecff;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.hud span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hud .status {
+  font-weight: 600;
+}
+
+.hud .controls {
+  font-size: 0.9rem;
+  color: #9fa9d9;
+}
+
+.status.victory {
+  color: #79ff9b;
+}
+
+.status.fail {
+  color: #ff7a7a;
+}
